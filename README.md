@@ -2,7 +2,7 @@
 ## В данный момент нет доступа к компьютеру с AndroidStudio, поэтому опишу процесс здесь:
 
 ##### В MainActivity, указанный в AndroidManifest, в методе onCreate обратимся к SharedPreferences. Так же следовало бы вывести следующий код в отдельный метод.
-
+P.S. Необходимо выполнить метод написанный ниже только если аргумент метода onCreate типа Bundle равен null.
 
 ```java
 SharedPreferences sh = getSharedPreferences("MyRefs", Context.MODE_PRIVATE);
