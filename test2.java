@@ -23,7 +23,7 @@ class Test2 {
     int[] newPrice = Arrays.copyOfRange(price, offset, offset + readLength);
     System.out.println(Arrays.toString(newPrice));
     for (int i = 0; i < newPrice.length; i++) {
-      newPrice[i] = (int) ((float) discount / 100 * newPrice[i]);
+      newPrice[i] = newPrice[i] - (int) ((float) discount / 100 * newPrice[i]);
     }
     return newPrice;
   }
